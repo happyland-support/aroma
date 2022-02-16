@@ -109,6 +109,15 @@ header li + li {
   margin-left: 16px;
 }
 
+header .pc-menu {
+  display: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header .pc-menu li a {
+  font-size: 16px;
+}
+
 /* menu */
 
 .overlay {
@@ -289,6 +298,15 @@ header li + li {
 /* medium screen */
 
 @media (min-width: 600px) {
+  
+  header .pc-menu {
+    display: block;
+  }
+
+  header .sp-menu {
+    display: none;
+  }
+
   .products li {
     width: calc((100% - 45 * 2px) / 3);
   }
@@ -315,12 +333,15 @@ header li + li {
 /* large screen */
 
 @media (min-width: 800px) {
+
   .container {
     width: calc(100% - 32px);
     max-width: 800px;
     margin: 0 auto;
   }
+
   .products li {
     width: calc((100% - 45 * 3px) / 4);
   }
+
 }
