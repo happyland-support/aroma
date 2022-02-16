@@ -20,6 +20,7 @@ p {
 
 img {
   vertical-align: bottom;
+  width: 100%;
 }
 
 ul {
@@ -62,6 +63,7 @@ a:hover {
 /* headerの余白 */
 
 .hero,
+.items,
 .company {
   padding-top: 78px;
 }
@@ -170,7 +172,6 @@ header li + li {
 }
 
 .hero img {
-  width: 100%;
   height: 300px;
   object-fit: cover;
   position: absolute;
@@ -204,10 +205,6 @@ header li + li {
   width: calc((100% - 45px) / 2);
 }
 
-.products li img {
-  width: 100%;
-}
-
 .products li h2 {
   text-align: center;
   font-size: 16px;
@@ -216,6 +213,48 @@ header li + li {
 
 .products li a {
   display: block;
+}
+
+.products li a:hover {
+  opacity: 1;
+}
+
+.products li a img {
+  transition: transform .3s;
+}
+
+.products li a img:hover {
+  transform: translateY(-7px);
+}
+
+/* items */
+
+.items .item-intro img {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.back a {
+  display: block;
+  width: 70%;
+  line-height: 48px;
+  border: 2px solid #333;
+  text-align: center;
+  margin: 48px auto;
+}
+
+/* copyright */
+
+.copyright {
+  background: #323435;
+  padding: 64px 0;
+  text-align: center;
+}
+
+.copyright small {
+  font-size: 16px;
+  color: #eee;
 }
 
 /* company */
@@ -247,36 +286,30 @@ header li + li {
   margin-left: 32px;
 }
 
-/* more */
-
- .more {
-  display: block;
-  width: 70%;
-  line-height: 48px;
-  border: 2px solid #333;
-  text-align: center;
-  margin: 64px auto 64px;
-}
-
-/* copyright */
-
-.copyright {
-  background: #323435;
-  padding: 64px 0;
-  text-align: center;
-}
-
-.copyright small {
-  font-size: 16px;
-  color: #eee;
-}
-
 /* medium screen */
 
 @media (min-width: 600px) {
   .products li {
     width: calc((100% - 45 * 2px) / 3);
   }
+  
+  .items .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .items .item-intro {
+    width: 40%;
+  }
+
+  .items .item-desc {
+    width: 55%;
+  }
+
+  .items h2 {
+    margin-top: 24px;
+  }
+
 }
 
 /* large screen */
