@@ -64,6 +64,7 @@ a:hover {
 
 .hero,
 .items,
+.associated,
 .company {
   padding-top: 78px;
 }
@@ -266,12 +267,29 @@ header .pc-menu li a {
   color: #eee;
 }
 
-/* company */
+/* associated */
 
-.company h1 {
-  border-left: 6px solid rgb(42, 163, 211);
-  padding: 8px;
+.associated h1 {
+  text-align: center;
+  padding-bottom: 64px;
 }
+
+.associated .pic {
+  padding: 24px;
+  min-width: 40%;
+}
+
+.associated h2 {
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.associated section + section {
+  margin-top: 40px;
+  border-top: 1px solid #999;
+}
+
+/* company */
 
 .company table {
   padding: 24px;
@@ -326,6 +344,18 @@ header .pc-menu li a {
 
   .items h2 {
     margin-top: 24px;
+  }
+
+  .associated h2 {
+    text-align: left;
+  }
+
+  .associated section {
+    display: flex;
+  }
+
+  .associated .desc {
+    padding: 24px;
   }
 
 }
