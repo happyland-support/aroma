@@ -20,7 +20,6 @@ p {
 
 img {
   vertical-align: bottom;
-  width: 100%;
 }
 
 ul {
@@ -183,6 +182,7 @@ header .pc-menu li a {
 }
 
 .hero img {
+  width: 100%;
   height: 350px;
   object-fit: cover;
   position: absolute;
@@ -231,6 +231,7 @@ header .pc-menu li a {
 }
 
 .products li a img {
+  width: 100%;
   transition: transform .3s;
 }
 
@@ -275,6 +276,10 @@ header .pc-menu li a {
   padding-bottom: 64px;
 }
 
+.associated img {
+  width: 100%;
+}
+
 .associated .pic {
   padding: 24px;
   min-width: 40%;
@@ -291,6 +296,10 @@ header .pc-menu li a {
 }
 
 /* company */
+
+.company img {
+  width: 100%;
+}
 
 .company table {
   padding: 24px;
