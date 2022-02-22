@@ -62,13 +62,13 @@ a:hover {
 /* headerの余白 */
 
 main {
-  padding-top: 78px;
+  padding-top: calc(38px + 8 * 2px);
 }
 
 /* header */
 
 header {
-  padding: 20px 0;
+  padding: 8px 0;
   position: fixed;
   top: 0;
   width: 100%;
