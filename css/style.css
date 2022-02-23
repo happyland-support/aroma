@@ -202,7 +202,7 @@ header .pc-menu li a {
 
 .products h1 {
   text-align: center;
-  padding: 90px 0;
+  padding: 60px 0;
   color: #e5447f;
 }
 
@@ -219,7 +219,7 @@ header .pc-menu li a {
 .products li h2 {
   text-align: center;
   font-size: 16px;
-  color: #81b3f1;
+  color: hsl(167, 60%, 30%);
 }
 
 .products li a {
