@@ -126,8 +126,22 @@ header .pc-menu {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header .pc-menu li {
+  padding: 4px;
+}
+
 header .pc-menu li a {
   font-size: 16px;
+}
+
+header .pc-menu li:last-child {
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+header .pc-menu li:last-child a {
+  color: var(--main_color);
+  font-weight: bold;
 }
 
 /* menu */
@@ -159,6 +173,12 @@ header .pc-menu li a {
   display: block;
   padding: 14px;
   color: #fff;
+}
+
+.overlay p {
+  margin-top: 16px;
+  color: #fff;
+  text-align: center;
 }
 
 .overlay.show {
