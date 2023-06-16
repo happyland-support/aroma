@@ -73,6 +73,7 @@ a:hover {
 
 main {
   padding-top: calc(38px + 8 * 2px);
+  margin-bottom: 24px;
 }
 
 /* header */
