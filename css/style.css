@@ -290,6 +290,19 @@ header .pc-menu li:last-child a {
   width: 100%;
 }
 
+/* copyright */
+
+.copyright {
+  background: var(--base_color);
+  padding: 64px 0;
+  text-align: center;
+}
+
+.copyright small {
+  font-size: 16px;
+  color: #eee;
+}
+
 /* products */
 
 .products {
@@ -353,17 +366,33 @@ header .pc-menu li:last-child a {
   margin: 48px auto;
 }
 
-/* copyright */
+/* event */
 
-.copyright {
-  background: var(--base_color);
-  padding: 64px 0;
-  text-align: center;
+.event section {
+  margin-bottom: 20px;
 }
 
-.copyright small {
-  font-size: 16px;
-  color: #eee;
+.event h1 {
+  color: var(--accent_color);
+  padding: 20px 0 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.event time {
+  margin-left: 12px;
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.event .pic img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.event section + section {
+  border-top: 1px solid #999;
 }
 
 /* associated */
@@ -450,6 +479,25 @@ header .pc-menu li:last-child a {
 
   .items h2 {
     margin-top: 24px;
+  }
+
+  .event section {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .event section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .event .desc {
+    width: 40%;
+  }
+
+  .event .pic {
+    margin-top: 20px;
+    width: 60%;
   }
 
   .associated h2 {
